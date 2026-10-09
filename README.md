@@ -1,5 +1,7 @@
 # KernelSU LSPosed & eUICC Hot-Reboot Fix
 
+[English](README.md) | [简体中文](README_CN.md)
+
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 [![KernelSU Compatible](https://img.shields.io/badge/KernelSU-Supported-brightgreen.svg)]()
 [![Magisk / APatch](https://img.shields.io/badge/Magisk%20%2F%20APatch-Supported-orange.svg)]()
