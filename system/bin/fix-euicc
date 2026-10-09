@@ -1,0 +1,13 @@
+#!/system/bin/sh
+# Standalone CLI recovery tool for eUICC / OMAPI after any external soft reboot
+echo "Resetting Secure Element HAL and UICC channels..."
+am force-stop im.angry.easyeuicc 2>/dev/null
+am force-stop com.android.se 2>/dev/null
+pkill -9 -f android.hardware.secure_element 2>/dev/null
+svc telephony radio off 2>/dev/null
+sleep 1
+svc telephony radio on 2>/dev/null
+sleep 1
+am force-stop com.android.se 2>/dev/null
+echo "✓ eUICC channels and Secure Element HAL reset successfully."
+echo "  Please reopen EasyEUICC."
